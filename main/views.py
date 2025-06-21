@@ -4,7 +4,7 @@ def home(request):
     return render(request, 'index.html')
 
 def flat(request):
-    return render(request, 'Flat.html')
+    return render(request, 'flat.html')
 
 def car(request):
     return render(request, 'car.html')
