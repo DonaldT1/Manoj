@@ -1,0 +1,87 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RENTHub| home</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+ <header>
+    <div class="header-flex">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+<img src="{% static 'logo.png' %}" alt="Logo" class="site-logo">
+      <h1>RENTHub</h1>
+    </div>
+    <nav id="nevbar">
+    <a href="{% url 'home' %}">Home</a>
+    <a href="{% url 'flat' %}">Flats</a>
+    <a href="{% url 'car' %}">Car</a>
+    <a href="{% url 'bike' %}">Bike</a>
+    <a href="{% url 'laptop' %}">Laptop</a>
+    <a href="{% url 'mobile' %}">Mobile</a>
+</nav>
+    </header>
+    <main>
+        <section class="flat">
+    <h2>Welcome to RENTHub</h2>
+    <p>Your one-stop solution for renting houses, flats, rooms, and more.</p>
+    <div class="item-grid">
+    <div class="item">
+        <a href="{% url 'flat' %}">
+            <img src="{% static 'th.jpg' %}" alt="House Image">
+            <button type="button">House</button>
+        </a>
+    </div>
+    <div class="item">
+        <a href="{% url 'car' %}">
+            <img src="{% static 'car.jpg' %}" alt="Car Image">
+            <button type="button">Car</button>
+        </a>
+    </div>
+    <div class="item">
+        <a href="{% url 'bike' %}">
+            <img src="{% static 'bike/bike1.jpeg.jpg' %}" alt="Bike Image">
+            <button type="button">Bike</button>
+        </a>
+    </div>
+</div>
+<section class="item-grid">
+    <div class="item">
+        <a href="{% url 'laptop' %}">
+            <img src="{% static 'laptop.jpeg' %}" alt="Laptop Image">
+            <button type="button">Laptop</button>
+        </a>
+    </div>
+    <div class="item">
+        <a href="{% url 'mobile' %}">
+            <img src="{% static 'mo.jpg' %}" alt="Mobile Image">
+            <button type="button">Mobile</button>
+        </a>
+    </div>
+</section>
+        <section class="footer">
+            <h3>Featured Listings</h3>
+            
+                <p>Luxury Apartment in Downtown</p>
+                <p>Cozy Room in Suburb</p>
+                <p>Modern House with Garden</p>
+                <p>Spacious Flat near University</p>
+            </ul>
+            </section>
+            <section class="footer a">
+            <h3>Contact Us</h3>
+            <p>If you have any questions or need assistance, feel free to reach out!</p>
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <button type="submit">Submit</button>
+
+            </form>
+            </section>
+    </main>
+</body>
+</html>

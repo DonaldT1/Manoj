@@ -1,0 +1,247 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: linear-gradient(90deg, #4CAF50 60%, #388e3c 100%);
+    color: #fff;
+    padding: 1.5rem 0 1rem 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    text-align: center;
+    position: relative;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+#nevbar {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 0.5rem;
+    flex-wrap: wrap;
+}
+
+#nevbar a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 0.5rem 1.2rem;
+    border-radius: 20px;
+    transition: background 0.2s, color 0.2s;
+}
+
+#nevbar a:hover, #nevbar a:focus {
+    background: #fff;
+    color: #388e3c;
+    outline: none;
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+    #nevbar {
+        gap: 0.5rem;
+    }
+    #nevbar a {
+        font-size: 1rem;
+        padding: 0.4rem 0.8rem;
+    }
+}
+
+main {
+    padding: 2rem;
+}
+
+.flat {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.flat h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.flat p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+
+.flat img {
+    width: 100%;
+    max-width: 300px; 
+    border-radius: 10px;
+    margin: 1rem;
+}
+
+button {
+    background-color: #4CAF50; 
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049; 
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+
+.footer h3 {
+    margin-bottom: 1rem;
+}
+
+.footer p {
+    margin: 0.5rem 0;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+label {
+    margin: 0.5rem 0;
+}
+
+input {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    width: 80%;
+    max-width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+@media (max-width: 768px) {
+    #nevbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #nevbar a {
+        margin: 0.5rem 0;
+    }
+
+    .flat img {
+        max-width: 90%; 
+    }
+}
+.item-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.item {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    padding: 1rem 1.5rem 1.5rem 1.5rem;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+    width: 200px;
+}
+
+.item:hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 6px 20px rgba(76,175,80,0.15);
+}
+
+.item img {
+    width: 100%;
+    max-width: 150px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.item button {
+    width: 100%;
+    margin-top: 0.5rem;
+    font-size: 1rem;
+}
+@media (max-width: 700px) {
+    .item-grid {
+        gap: 1rem;
+    }
+    .item {
+        width: 140px;
+        padding: 0.7rem;
+    }
+    .item img {
+        max-width: 100px;
+        height: 70px;
+    }
+}
+.flat-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.flat-grid img {
+    width: 220px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    transition: transform 0.2s;
+}
+
+.flat-grid img:hover {
+    transform: scale(1.04);
+}
+
+@media (max-width: 700px) {
+    .flat-grid img {
+        width: 120px;
+        height: 80px;
+    }
+}
+.header-flex {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  justify-content: center; 
+}
+.site-logo {
+  height: 70px;
+  width: auto;
+  align-items: left;
+  display: block;
+}
