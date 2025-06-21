@@ -1,4 +1,4 @@
 [[redirects]]
 from = "/*"
-to = "C:\Users\ACER\Desktop\Manoj\renthubsite\main\templates\index.html"
+to = "Manoj/main/templates/index.html"
 status = 200
