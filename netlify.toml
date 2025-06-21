@@ -1,4 +1,4 @@
 [[redirects]]
 from = "/*"
-to = "Manoj/main/templates/index.html"
+to = "/index.html"
 status = 200
